@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import './index.css'; // Vous pouvez commenter cette ligne si ce fichier n'existe pas
+import ReactDOM from 'react-dom/client'; // Notez le changement ici pour React 18
 import App from './App';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
